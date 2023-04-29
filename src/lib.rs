@@ -1,5 +1,5 @@
 use std::error::Error;
-use std::{fs};
+use std::fs;
 
 pub struct Config {
     pub query: String,
@@ -18,7 +18,11 @@ impl Config {
 
         let ignore_case = true;
 
-        Ok(Config { query, file_path, ignore_case })
+        Ok(Config {
+            query,
+            file_path,
+            ignore_case,
+        })
     }
 }
 
